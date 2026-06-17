@@ -7,7 +7,13 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e:viewport1": "cypress run --browser chrome --headed --config viewportHeight=800,viewportWidth=360",
+    "e2e:viewport2": "cypress run --browser chrome --headed --config viewportHeight=1080,viewportWidth=1920",
+    "e2e:chrome": "cypress run --browser chrome --headed",
+    "e2e:edge": "cypress run --browser edge --headed",
+    "e2e:chrome:headless": "cypress run --browser chrome --headless",
+    "e2e:edge:headless": "cypress run --browser edge --headless"
   },
   "dependencies": {
     "cypress": "^15.17.0"
